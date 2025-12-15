@@ -42,7 +42,6 @@ MoodLog는 사용자가 작성한 일기를 AI가 분석하여
 
 ##  시스템 설계 개요
 
-```
 
 Client
 ↓
@@ -51,7 +50,6 @@ FastAPI
 ├─ Service Layer (LLM / Mock AI)
 └─ (확장) Image / DB / Storage
 
-```
 
 ### 설계 포인트
 - **Router / Service / Schema 분리**
@@ -61,8 +59,6 @@ FastAPI
 ---
 
 ##  프로젝트 구조
-
-```
 
 app/
 ├─ main.py              # 애플리케이션 진입점
@@ -74,7 +70,6 @@ app/
 └─ services/
 └─ llm.py            # LLM / Mock AI 처리 로직
 
-````
 
 ### 구조 설계 의도
 - `schemas`: API 계약 명확화 (Pydantic)
